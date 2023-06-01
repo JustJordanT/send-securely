@@ -2,6 +2,9 @@ const { createSecureHeaders } = require('next-secure-headers');
 const { i18n } = require('./next-i18next.config');
 
 module.exports = {
+  experimental: {
+    outputStandalone: false,
+  },
   i18n,
   poweredByHeader: false,
   headers: () => [
